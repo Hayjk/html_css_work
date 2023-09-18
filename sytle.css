@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Lato';
+}
+
+img{
+    display: block;
+}
+
+.containerA{
+    min-width: 1600px;
+    margin: 0 auto;
+}
+
+.containerB{
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #222;
+}
+
+.navigation{
+    padding-top: 18px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoNavigation{
+    display: flex;
+    gap: 42px;
+}
+
+.menuNavigation{
+    display: flex;
+    gap: 28px;
+}
+
+.headBtn{
+    background: #222;
+    border: none;
+    cursor: pointer;
+}
+
+.slogan{
+    background-color: #F1E4E6;
+}
+
+.sloganBlock{
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    margin-bottom: 65px;
+}
+
+.text{
+    min-width: 377px;
+}
+
+.stickAndText h1{
+    color: #222;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.blackText{
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pinckText{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contentCatalog{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 96px;
+}
+
+/* .backroundCatalog{
+    width: 360px;
+    height: 260px;
+    background: rgba(33, 22, 22, 0.70);
+    position: absolute;
+} */
+
+/* .textCatalog{
+    position: absolute;
+    margin: 105px 103px;
+} */
+
+
+.textCatalog p{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.textCatalog h3{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.textCatalogProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.textCatalogProduct h1{
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.textCatalogProduct p{
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.catalogProductBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.productBlock{
+    max-width: 360px;
+    max-height: 581px;
+}
+
+.productText{
+    max-width: 315px;
+    padding: 24px 16px;
+}
+
+.productText h5{
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.aboutText{
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.price{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.catalogProductBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.productBtn{
+    width: 212px;
+    height: 48px;
+    margin-bottom: 60px;
+    background: none;
+    border: 1px;
+    border-style: solid;
+    border-color: #FF6A6A;
+    cursor: pointer;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+}
