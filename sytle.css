@@ -13,6 +13,7 @@ body{
 }
 
 img{
+    size: 100%;
     display: block;
 }
 
@@ -65,13 +66,13 @@ img{
     margin-bottom: 65px;
 }
 
-.text{
-    min-width: 377px;
-}
-
 .stickAndText{
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .stickAndText h1{
@@ -101,7 +102,7 @@ img{
     gap: 30px;
     flex-wrap: wrap;
     position: relative;
-    margin-bottom: 96px;
+    margin-bottom: 96px;  
 }
 
 .blockImgCatalog{
@@ -241,4 +242,84 @@ img{
     font-size: 16px;
     font-weight: 400;
     padding: 15px 30px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .containerA{
+        max-width: 1024;
+    }
+    
+    .containerB{
+        max-width: 740px;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoNavigation{
+        display: flex;
+        gap: 41px;
+        padding-left: 32px;
+    }
+
+    .menuNavigation{
+        display: flex;
+        gap: 25px;
+        padding-right: 18px;
+    }
+
+    .sloganBlock{
+        gap: 30px;
+        align-items: center;
+    }
+
+    .imgMen img{
+        width: 386px;
+        height: 368px;
+    }
+
+    .stickAndText{
+        min-width: 310px;
+    }
+
+    .stickAndText h1{
+        font-size: 44px;
+    }
+    
+    .blackText{
+        font-size: 24px;
+    }
+    
+    .pinckText{
+        font-size: 24px;
+    }
+
+    .contentCatalog{
+        gap: 19px;
+    }
+
+    .imgBlock{
+        max-width: 232px;
+    }
+    
+    .backroundImg{
+        max-width: 232px;
+    }
+
+    .bigImgBlock{
+        max-width: 734px;
+    }
+
+    .backroundBigImg{
+        max-width: 734px;
+    }
+
+    .catalogProductBlock{
+        gap: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
 }
