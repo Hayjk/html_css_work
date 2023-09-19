@@ -17,12 +17,12 @@ img{
 }
 
 .containerA{
-    min-width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .containerB{
-    max-width: 1146px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -61,12 +61,17 @@ img{
 .sloganBlock{
     display: flex;
     align-items: center;
-    gap: 92px;
+    justify-content: space-around;
     margin-bottom: 65px;
 }
 
 .text{
     min-width: 377px;
+}
+
+.stickAndText{
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
 }
 
 .stickAndText h1{
@@ -99,18 +104,28 @@ img{
     margin-bottom: 96px;
 }
 
-/* .backroundCatalog{
-    width: 360px;
-    height: 260px;
-    background: rgba(33, 22, 22, 0.70);
-    position: absolute;
-} */
+.blockImgCatalog{
+    position: relative;
+}
 
-/* .textCatalog{
+.textCatalog{
     position: absolute;
-    margin: 105px 103px;
-} */
-
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
 .textCatalog p{
     color: #FFF;
@@ -125,6 +140,27 @@ img{
     font-family: Lato;
     font-size: 24px;
     font-weight: 700;
+}
+
+.backroundCatalog{
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
 }
 
 .textCatalogProduct{
@@ -198,9 +234,7 @@ img{
     height: 48px;
     margin-bottom: 60px;
     background: none;
-    border: 1px;
-    border-style: solid;
-    border-color: #FF6A6A;
+    border: 1px solid #F16D7F;
     cursor: pointer;
     color: #F26376;
     font-family: Lato;
