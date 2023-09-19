@@ -244,6 +244,7 @@ img{
     padding: 15px 30px;
 }
 
+/* под планшет */
 @media (max-width: 1024px) and (min-width: 768px){
     .containerA{
         max-width: 1024;
@@ -321,5 +322,94 @@ img{
         align-items: center;
         display: flex;
         justify-content: center;
+    }
+}
+
+/* под телефон */
+@media (max-width: 767px){
+    .containerA{
+        max-width: 767px;
+    }
+
+    .containerB{
+        max-width: 360px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .logoNavigation{
+        display: flex;
+        gap: 41px;
+        padding-left: 16px;
+    }
+
+    .menuNavigation{
+        display: flex;
+        gap: 25px;
+        padding-right: 16px;
+    }
+
+    .slogan{
+        min-height: 363px;
+        margin-bottom: 64px;
+    }
+
+    .sloganBlock{
+        padding-top: 148px;
+        display: flex;
+        align-items: center;
+    }
+
+    .stickAndText{
+        min-width: 340px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .stickAndText h1{
+        font-size: 38px;
+    }
+    
+    .blackText{
+        font-size: 20px;
+    }
+    
+    .pinckText{
+        font-size: 20px;
+    }
+
+    .contentCatalog{
+        gap: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .imgBlock{
+        width: 344px;
+    }
+    
+    .backroundImg{
+        max-width: 344px;
+    }
+
+    .bigImgBlock{
+        max-width: 344px;
+        height: 111px;
+        object-fit: cover;
+    }
+
+    .backroundBigImg{
+        max-width: 344px;
+        height: 111px;
+        object-fit: cover;
     }
 }
