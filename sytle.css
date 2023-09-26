@@ -47,6 +47,24 @@ img{
 .menuNavigation{
     display: flex;
     gap: 28px;
+    position: relative;
+}
+
+.check{
+    width: 19px;
+    height: 19px;
+    background:#F16D7F;
+    border-radius: 100px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
 }
 
 .headBtn{
@@ -199,6 +217,40 @@ img{
     max-height: 581px;
 }
 
+.productImg{
+    position: relative;
+}
+
+.producktHover{
+    transform: scale(0);
+    background-image: url(./img/productHower.svg);
+    width: 360px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.producktHover button{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 5px;
+    width: 139px;
+    height: 44px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.productImg:hover .producktHover{
+    transform: scale(100%);
+}
+
 .productText{
     max-width: 315px;
     padding: 24px 16px;
@@ -246,6 +298,161 @@ img{
     padding: 15px 30px;
 }
 
+.productBtn:hover{
+    background: #F16D7F;
+    color: #FFFFFF;
+}
+
+.information{
+    background-color: #222224;
+}
+
+.contentInformation{
+    padding-top: 104px;
+    padding-bottom: 104px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.blockInformation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentInformation h5{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-weight: 400;
+    margin-top: 26px;  
+}
+
+.contentInformation p{
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.972px;
+    font-weight: 300;
+    margin-top: 16px;
+    max-width: 300px;
+}
+
+.backroundSubscribe{
+    background-image: url("./img/backroundSubscribe.svg");
+    background-repeat: no-repeat;
+    min-height: 448px;
+}
+
+.contentSubscribe{
+    display: flex;
+    gap: 223px;
+    justify-content: space-around;
+}
+
+.comment{
+    padding-top: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.comment p{
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 400px;
+    padding-top: 30px;
+}
+
+.inputText{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    min-width: 557px;
+}
+
+.inputText h3{
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.inputText h6{
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+.inputBtn{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 32px;
+}
+
+.form{
+    width: 256px;
+    height: 49px;
+    background: #E1E1E1;
+    border: none;
+    border-radius: 35px 0 0 35px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 22px;
+}
+
+.subscribeBtn{
+    width: 100px;
+    height: 49px;
+    background: #F16D7F;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.backroundFooter{
+    background: #222224;
+}
+
+.contentFooter{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productMarker{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.socialIcon{
+    display: flex;
+    gap: 7px;
+}
+
 /* под планшет */
 @media (max-width: 1024px) and (min-width: 768px){
     .containerA{
@@ -271,6 +478,11 @@ img{
         display: flex;
         gap: 25px;
         padding-right: 18px;
+    }
+
+    .check{
+        top: -5px;
+        right: 8px;
     }
 
     .sloganBlock{
@@ -325,6 +537,24 @@ img{
         display: flex;
         justify-content: center;
     }
+
+    .contentInformation{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .contentSubscribe{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .backroundSubscribe{
+        background-size: cover;
+    }
 }
 
 /* под телефон */
@@ -365,6 +595,7 @@ img{
     }
 
     .sloganBlock{
+        margin-left: 70px;
         padding-top: 148px;
         display: flex;
         align-items: center;
@@ -413,5 +644,37 @@ img{
         max-width: 344px;
         height: 111px;
         object-fit: cover;
+    }
+
+    .contentInformation{
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    .contentSubscribe{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .backroundSubscribe{
+        background-size: cover;
+    }
+
+    .inputText{
+        min-width: 271px;
+    }
+
+    .inputText h6{
+        font-size: 14px;
+    }
+
+    .contentFooter{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
     }
 }
