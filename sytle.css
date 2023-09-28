@@ -75,6 +75,58 @@ img{
 
 .slogan{
     background-color: #F1E4E6;
+    position: relative;
+}
+
+.menu{
+    background: #FFF;
+    padding-top: 32px;
+    padding-left: 33px;
+    padding: 32px 144px 32px 33px;
+    position: absolute;
+    right: 0;
+}
+
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menuContent h6{
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.listMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.listMenu h6{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.listMenu li{
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.listMenu li::marker{
+    color: white;
+}
+
+.hiddenMenu{
+    display: none;
 }
 
 .sloganBlock{
@@ -449,9 +501,30 @@ img{
 }
 
 .socialIcon{
+    width: 148px;
+    height: 32px;
     display: flex;
-    gap: 7px;
+    justify-content: space-between;
 }
+
+.socialIcon a{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+}
+
+.icon:hover{
+    background: #F16D7F;
+    fill: white;
+}
+
 
 /* под планшет */
 @media (max-width: 1024px) and (min-width: 768px){
@@ -483,6 +556,12 @@ img{
     .check{
         top: -5px;
         right: 8px;
+    }
+
+    .menu{
+        height: 367px;
+        overflow:hidden; 
+        overflow-y:scroll;
     }
 
     .sloganBlock{
@@ -594,6 +673,12 @@ img{
         margin-bottom: 64px;
     }
 
+    .menu{
+        height: 367px;
+        overflow:hidden; 
+        overflow-y:scroll;
+    }
+
     .sloganBlock{
         margin-left: 70px;
         padding-top: 148px;
@@ -602,7 +687,7 @@ img{
     }
 
     .stickAndText{
-        min-width: 340px;
+        max-width: 340px;
         display: flex;
         justify-content: flex-start;
         gap: 5px;
@@ -624,6 +709,7 @@ img{
         gap: 32px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .imgBlock{
